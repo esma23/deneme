@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- Başlık -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="İdeal Kilo"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:background="#FF4081"
+        android:textSize="20sp"
+        android:padding="8dp" />
+
+    <!-- Boy -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Boy"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:gravity="center_vertical" />
+
+        <EditText
+            android:id="@+id/editBoy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="164"
+            android:inputType="number"
+            android:background="#B2FF59"
+            android:gravity="center"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- Kilo -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kilo"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:gravity="center_vertical" />
+
+        <SeekBar
+            android:id="@+id/sbKilo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="200"
+            android:progress="46" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textKilo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="46 kg"
+        android:layout_gravity="end"
+        android:textSize="16sp" />
+
+    <!-- Cinsiyet -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cinsiyet"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:gravity="center_vertical" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupCinsiyet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/radioButtonBayan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bayan"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radioButtonBay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bay" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <!-- İdeal Kilonuz -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="İdeal Kilonuz"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/textIdealKilo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFFF00"
+            android:gravity="center"
+            android:text="58"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- Sonuç -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sonuç"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/textSonuc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#CCFF90"
+            android:gravity="center"
+            android:text="Zayıfsınız"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>
